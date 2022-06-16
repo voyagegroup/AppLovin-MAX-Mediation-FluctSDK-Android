@@ -1,0 +1,56 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
+
+ext {
+    versions = [
+            'fluctSdk': '8.13.0',
+            'appLovin': '11.3.3',
+    ]
+}
+
+android {
+    compileSdk 32
+
+    defaultConfig {
+        applicationId "jp.fluct.fluctsdk.exmaple.android.applovinadapter"
+        minSdk 16
+        targetSdk 32
+        versionCode 1
+        versionName "1.0-SNAPSHOT"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+    implementation 'androidx.core:core-ktx:1.8.0'
+    implementation 'androidx.appcompat:appcompat:1.4.2'
+    implementation 'com.google.android.material:material:1.6.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+
+    //noinspection GradleDependency
+    implementation "com.applovin:applovin-sdk:${versions.appLovin}"
+
+    implementation "jp.fluct:FluctSDK:${versions.fluctSdk}"
+    implementation "jp.fluct.fluctsdk:fullscreen-ads:${versions.fluctSdk}"
+}

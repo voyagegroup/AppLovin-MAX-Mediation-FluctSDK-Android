@@ -1,0 +1,20 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        jcenter().mavenContent {
+            includeGroup('com.google.android.exoplayer')
+        }
+        maven { url 'https://voyagegroup.github.io/FluctSDK-Android/m2/repository' }
+    }
+}
+rootProject.name = "AppLovin-MAX-Mediation-FluctSDK-Android"
+include ':app'
