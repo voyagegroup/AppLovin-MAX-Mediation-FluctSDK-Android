@@ -53,4 +53,5 @@ dependencies {
 
     implementation "jp.fluct:FluctSDK:${versions.fluctSdk}"
     implementation "jp.fluct.fluctsdk:fullscreen-ads:${versions.fluctSdk}"
+    implementation "jp.fluct.mediation.applovin:applovin-adapter:${versions.fluctSdk}"
 }
