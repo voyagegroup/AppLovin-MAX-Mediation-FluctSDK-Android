@@ -7,7 +7,6 @@ import androidx.core.view.WindowCompat
 import com.applovin.sdk.AppLovinSdk
 import com.applovin.sdk.AppLovinSdkConfiguration
 import com.applovin.sdk.AppLovinSdkSettings
-import jp.fluct.fluctsdk.exmaple.android.applovinadapter.databinding.ActivityMainBinding
 import jp.fluct.fluctsdk.exmaple.android.applovinadapter.databinding.MainActivityBinding
 
 class MainActivity : AppCompatActivity() {
