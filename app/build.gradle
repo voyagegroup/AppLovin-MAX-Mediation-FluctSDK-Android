@@ -5,7 +5,7 @@ plugins {
 
 ext {
     versions = [
-            'fluctSdk': '8.13.0',
+            'fluctSdk': '8.14.0',
             'appLovin': '11.3.3',
     ]
 }
